@@ -27,4 +27,4 @@
 - Language: Go
 - Approach: Use concept of join to get interesting data to identify the record or make them aggregation
 - Why: If this case happend much so we need to identify and looking for good performance of database and built-in function that support about data transformation
-- Time spent: ~40 min
+- Time spent: ~1.30 hr
