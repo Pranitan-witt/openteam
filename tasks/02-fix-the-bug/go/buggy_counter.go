@@ -2,13 +2,19 @@ package counter
 
 import (
 	"math/rand"
-	"sync/atomic"
+	"sync"
 )
 
-var current int64
+var (
+	current int64
+	mu      sync.Mutex
+)
 
 func NextID() int64 {
-	id := atomic.AddInt64(&current, 1) + int64(rand.Int())
+	mu.Lock()
+	defer mu.Unlock()
+
+	id := current + int64(rand.Int())
 	current++
 	return id
 }

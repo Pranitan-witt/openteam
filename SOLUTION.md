@@ -11,7 +11,7 @@
 ### Task 02 – Fix‑the‑Bug
 
 - Language: Go
-- Approach: Output is only want to avoid the duplication so I decided to keep it simple for reduce time for other problem
+- Approach: try to use mutex to lock the variable
 - Why: Should use realible library to generate the uuid instead if id not necessary to order
 - Time spent: ~3 min
 
